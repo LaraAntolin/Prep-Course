@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
-  return string;
+  return str;
   
 }
 
@@ -74,11 +74,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.lenght===str2.lenght ) {
-    return true;
-  } else {
-    return false;
-  }
+  return str1.lenght===str2.lenght; 
 }
 
 function menosQueNoventa(num) {
@@ -96,13 +92,9 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num>50 ) {
-    return true;
-  } else {
-    return false;
-
+  return num>50;  
 }  
-}
+
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -157,13 +149,13 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto = num % 1;
-  var entero = num - resto;
-  if (resto >= 0.5) {
-    return entero + 1;
-  } else {
-    return entero;
-  }
+  // var resto = num % 1;
+  // var entero = num - resto;
+  // if (resto >= 0.5) {
+  //  return entero + 1;
+  // } else {
+  //  return entero;
+  // }
 return Math.round(num);
 }
 
